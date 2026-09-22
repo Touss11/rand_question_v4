@@ -1,0 +1,19 @@
+[project]
+name = "rand-question-v4"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Toussaint Huillery", email = "huillert@mcmaster.ca" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "streamlit>=1.40.0",
+]
+
+[project.scripts]
+rand-question-v4 = "rand_question_v4.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.12.12,<0.13.0"]
+build-backend = "uv_build"
